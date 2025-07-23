@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.text-shadow-black {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes custom-bounce {
+ 0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px); 
+  }
+}
+
+.bounce-animation {
+  animation: custom-bounce 1s infinite;
+}
