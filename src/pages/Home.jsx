@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import mypic from "../assets/1749228827951.jpg";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ export default function Home() {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <motion.img
-          src="src/assets/1749228827951.jpg"
+          src={mypic}
           className="rounded-full border-2 border-white shadow-[0_0_15px_rgb(0,0,0)] fixed scale-165"
           initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
