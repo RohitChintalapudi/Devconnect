@@ -38,7 +38,7 @@ export default function Home() {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <motion.img
-          src="src/assets/1749228827951.jpg"
+          src="../assets/1749228827951.jpg"
           className="rounded-full border-2 border-white shadow-[0_0_15px_rgb(0,0,0)] fixed scale-165"
           initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
