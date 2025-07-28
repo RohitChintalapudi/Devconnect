@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
   const skillIcons = [
-    "../assets/62b221ef038aad4d3ed7ca2c.png",
+    "../assets/5847f5bdcef1014c0b5e489c.png",
     "../assets/62b221ef038aad4d3ed7ca2e.png",
     "../assets/613b64fe30e8530004ba3a03.png",
     "../assets/62a74dd1223343fbc2207d00.png",

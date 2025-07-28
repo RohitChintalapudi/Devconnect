@@ -78,7 +78,7 @@ export default function Contact() {
         className="flex flex-row mt-7 gap-5 justify-center items-center"
       >
         <div className="flex flex-row justify-center hover:scale-105 transition-all duration-300 ease-in-out gap-1 items-center">
-          <img src="src/assets/icons8-github-30.png" className="w-14 h-14" />
+          <img src="../assets/icons8-github-50.png" className="w-14 h-14" />
           <span className="text-white cursor-pointer">
             <a href="https://github.com/RohitChintalapudi" target="_main">
               Github
@@ -87,7 +87,7 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-row justify-center  hover:scale-105 transition-all duration-300 ease-in-out  gap-1 items-center">
-          <img src="src/assets/icons8-instagram-50.png" className="w-12 h-12" />
+          <img src="../assets/icons8-instagram-50.png" className="w-12 h-12" />
           <span className="text-white cursor-pointer">
             <a href="#" target="_main">
               Instagram
@@ -96,7 +96,7 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-row justify-center gap-1 hover:scale-105 transition-all duration-300 ease-in-out  items-center">
-          <img src="src/assets/icons8-linkedin-30.png" className="w-12 h-12" />
+          <img src="../assets/icons8-linkedin-30.png" className="w-12 h-12" />
           <span className="text-white cursor-pointer">
             <a
               href="https://www.linkedin.com/in/rohit-chintalapudi-5454ba36a/"

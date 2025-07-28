@@ -36,7 +36,7 @@ export default function Projects() {
         >
           <a href="https://github.com/RohitChintalapudi/Cric-Play" target="_main">
             <img
-              src="src/assets/img1.png"
+              src="../assets/img1.png"
               className="w-[400px] rounded-xl drop-shadow-2xl border-2"
               alt="Cric-Play"
             />
@@ -53,7 +53,7 @@ export default function Projects() {
         >
           <a href="https://github.com/RohitChintalapudi/Word-Assemble-game" target="_main">
             <img
-              src="src/assets/img4.png"
+              src="../assets/img4.png"
               className="w-[400px] rounded-xl drop-shadow-2xl border-2"
               alt="Word Assemble Game"
             />
@@ -70,7 +70,7 @@ export default function Projects() {
         >
           <a href="https://github.com/RohitChintalapudi/weather-app/tree/master" target="_main">
             <img
-              src="src/assets/img2.png"
+              src="../assets/img2.png"
               className="w-[400px] rounded-xl drop-shadow-2xl border-2"
               alt="Weather App"
             />
