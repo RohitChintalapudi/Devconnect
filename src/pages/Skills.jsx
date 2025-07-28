@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
   const skillIcons = [
-    "src/assets/5847f5bdcef1014c0b5e489c.png",
-    "src/assets/62b221ef038aad4d3ed7ca2e.png",
-    "src/assets/613b64fe30e8530004ba3a03.png",
-    "src/assets/62a74dd1223343fbc2207d00.png",
-    "src/assets/62a754d4223343fbc2207d0b.png",
-    "src/assets/62a6360f03a870b920cbfd41.png",
-    "src/assets/62a75261223343fbc2207d09.png",
-    "src/assets/629b7ab67c5cd817694c3230.png",
-    "src/assets/a8cd2dd4499c1bba48709320bb50fb56.png",
-    "src/assets/fc6f52ff1691fd7c40061f4d251bac76.png",
-    "src/assets/icons8-tailwindcss-48.png"
+    "../assets/62b221ef038aad4d3ed7ca2c.png",
+    "../assets/62b221ef038aad4d3ed7ca2e.png",
+    "../assets/613b64fe30e8530004ba3a03.png",
+    "../assets/62a74dd1223343fbc2207d00.png",
+    "../assets/62a754d4223343fbc2207d0b.png",
+    "../assets/62a6360f03a870b920cbfd41.png",
+    "../assets/62a75261223343fbc2207d09.png",
+    "../assets/629b7ab67c5cd817694c3230.png",
+    "../assets/a8cd2dd4499c1bba48709320bb50fb56.png",
+    "../assets/fc6f52ff1691fd7c40061f4d251bac76.png",
+    "../assets/icons8-tailwindcss-48.png"
   ];
 
   return (
