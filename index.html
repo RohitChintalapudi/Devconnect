@@ -7,12 +7,12 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Rohit Chintalapudi - Frontend Web Developer specializing in React, JavaScript, and modern web technologies. View my portfolio and projects.">
-    <meta name="keywords" content="frontend developer, web developer, React, JavaScript, HTML, CSS, portfolio">
+    <meta name="keywords" content="frontend developer, web developer, React, JavaScript, HTML, CSS, portfolio, black and yellow theme">
     <meta name="author" content="Rohit Chintalapudi">
     
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="Devconnect - Rohit Chintalapudi">
-    <meta property="og:description" content="Frontend Web Developer Portfolio">
+    <meta property="og:description" content="Frontend Web Developer Portfolio - Black & Yellow Edition">
     <meta property="og:type" content="website">
     
     <!-- Favicon -->
@@ -27,28 +27,56 @@
     
     <!-- Responsive Design Enhancements -->
     <style>
-      /* Ensure smooth scrolling and prevent horizontal overflow */
+      /* Black and Yellow Theme Variables */
+      :root {
+        --primary-yellow: #fbbf24;
+        --secondary-yellow: #f59e0b;
+        --dark-yellow: #d97706;
+        --light-yellow: #fef3c7;
+        --primary-black: #000000;
+        --secondary-black: #1f2937;
+        --gray-black: #374151;
+      }
+      
+      /* FIXED: Prevent horizontal overflow and extra spacing */
+      * {
+        box-sizing: border-box;
+      }
+      
       html {
         scroll-behavior: smooth;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
+        width: 100vw;
+        background: linear-gradient(135deg, #000000 0%, #1f2937 30%, #374151 60%, #d97706 90%, #fbbf24 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
       }
       
       body {
-        overflow-x: hidden;
+        margin: 0 !important;
+        padding: 0 !important; /* REMOVED ALL PADDING */
+        overflow-x: hidden !important;
+        background: transparent;
+        width: 100vw;
+        max-width: 100vw;
       }
       
-      /* Custom responsive utilities */
+      /* FIXED: Remove all padding that was causing extra space */
       @media (max-width: 640px) {
         body {
-          /* Reduce top padding on mobile */
-          padding-top: 4rem !important;
+          padding-top: 0 !important; /* REMOVED PADDING */
+        }
+        
+        html {
+          background-attachment: scroll;
+          width: 100vw;
+          overflow-x: hidden !important;
         }
       }
       
       @media (min-width: 641px) and (max-width: 1024px) {
         body {
-          /* Medium padding for tablet */
-          padding-top: 5rem !important;
+          padding-top: 0 !important; /* REMOVED PADDING */
         }
       }
       
@@ -57,12 +85,28 @@
         body {
           background-attachment: scroll !important;
           min-height: 100vh;
+          padding: 0 !important; /* REMOVED PADDING */
+          margin: 0 !important;
+          width: 100vw !important;
+          overflow-x: hidden !important;
+        }
+        
+        html {
+          background: linear-gradient(180deg, #000000 0%, #1f2937 40%, #d97706 80%, #fbbf24 100%);
+          background-attachment: scroll;
+          width: 100vw !important;
+          overflow-x: hidden !important;
+        }
+        
+        /* ADDED: Prevent any element from causing overflow */
+        * {
+          max-width: 100vw !important;
         }
       }
       
       /* High DPI displays */
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        body {
+        html {
           background-size: cover;
         }
       }
@@ -70,52 +114,213 @@
       /* Landscape mobile optimization */
       @media (max-height: 500px) and (orientation: landscape) {
         body {
-          padding-top: 2rem !important;
+          padding-top: 0 !important; /* REMOVED PADDING */
           min-height: 100vh;
         }
+        
+        html {
+          background: linear-gradient(90deg, #000000 0%, #1f2937 50%, #fbbf24 100%);
+        }
+      }
+      
+      /* Loading spinner customization */
+      .loading-spinner {
+        background: linear-gradient(135deg, #000000 0%, #1f2937 30%, #374151 60%, #d97706 90%, #fbbf24 100%);
+        backdrop-filter: blur(10px);
+      }
+      
+      .spinner-ring {
+        border-color: var(--light-yellow) transparent var(--primary-yellow) transparent;
+        box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+      }
+      
+      /* Custom yellow glow effect */
+      .yellow-glow {
+        box-shadow: 0 0 30px rgba(251, 191, 36, 0.4);
+        animation: yellowPulse 2s ease-in-out infinite alternate;
+      }
+      
+      @keyframes yellowPulse {
+        from {
+          box-shadow: 0 0 30px rgba(251, 191, 36, 0.4);
+        }
+        to {
+          box-shadow: 0 0 40px rgba(251, 191, 36, 0.7);
+        }
+      }
+      
+      /* Loading screen animations */
+      @keyframes floating-1 {
+        0%, 100% { 
+          transform: translateY(0px) translateX(0px) scale(1);
+          opacity: 0.5;
+        }
+        25% { 
+          transform: translateY(-20px) translateX(10px) scale(1.1);
+          opacity: 0.8;
+        }
+        50% { 
+          transform: translateY(-10px) translateX(-15px) scale(0.9);
+          opacity: 0.6;
+        }
+        75% { 
+          transform: translateY(-30px) translateX(20px) scale(1.2);
+          opacity: 0.9;
+        }
+      }
+      
+      @keyframes floating-2 {
+        0%, 100% { 
+          transform: translateY(0px) translateX(0px) scale(1) rotate(0deg);
+          opacity: 0.6;
+        }
+        33% { 
+          transform: translateY(15px) translateX(-20px) scale(1.3) rotate(120deg);
+          opacity: 0.4;
+        }
+        66% { 
+          transform: translateY(-25px) translateX(25px) scale(0.8) rotate(240deg);
+          opacity: 0.8;
+        }
+      }
+      
+      @keyframes floating-3 {
+        0%, 100% { 
+          transform: translateY(0px) translateX(0px) scale(1);
+          opacity: 0.4;
+        }
+        20% { 
+          transform: translateY(-15px) translateX(-10px) scale(1.1);
+          opacity: 0.6;
+        }
+        40% { 
+          transform: translateY(20px) translateX(15px) scale(0.9);
+          opacity: 0.3;
+        }
+        60% { 
+          transform: translateY(-25px) translateX(-20px) scale(1.2);
+          opacity: 0.7;
+        }
+        80% { 
+          transform: translateY(10px) translateX(25px) scale(0.8);
+          opacity: 0.5;
+        }
+      }
+      
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .floating-dot-1 {
+        animation: floating-1 6s ease-in-out infinite;
+      }
+      
+      .floating-dot-2 {
+        animation: floating-2 8s ease-in-out infinite;
+        animation-delay: 1s;
+      }
+      
+      .floating-dot-3 {
+        animation: floating-3 7s ease-in-out infinite;
+        animation-delay: 0.5s;
+      }
+      
+      .animate-fade-in {
+        animation: fade-in 1s ease-out forwards;
+        opacity: 0;
+      }
+      
+      /* Smooth transitions */
+      * {
+        transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+      }
+      
+      /* Dark mode friendly scrollbars */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: var(--secondary-black);
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: var(--secondary-yellow);
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-yellow);
+      }
+
+      /* ADDED: Ensure root div takes full space without gaps */
+      #root {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
     </style>
   </head>
-  <body class="
-    /* Responsive padding */
-    pt-16 sm:pt-20 lg:pt-19
+  <body class="bg-transparent min-h-screen overflow-x-hidden antialiased scroll-smooth text-white">
     
-    /* Background */
-    bg-no-repeat 
-    bg-cover 
-    bg-center 
-    bg-fixed 
-    sm:bg-fixed
-    
-    /* Container */
-    max-w-full 
-    w-full
-    
-    /* Gradient background */
-    bg-gradient-to-br 
-    from-blue-500 
-    from-0% 
-    via-violet-600 
-    via-50% 
-    to-fuchsia-500 
-    to-100%
-    
-    /* Height */
-    min-h-screen
-    
-    /* Prevent horizontal scroll */
-    overflow-x-hidden
-    
-    /* Text rendering optimization */
-    antialiased
-    
-    /* Smooth scrolling container */
-    scroll-smooth
-  ">
-    
-    <!-- Loading Indicator (Optional) -->
-    <div id="loading-spinner" class="fixed inset-0 bg-gradient-to-br from-blue-500 via-violet-600 to-fuchsia-500 flex items-center justify-center z-50">
-      <div class="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-4 border-white border-t-transparent"></div>
+    <!-- Animated Dots Loading Screen -->
+    <div id="loading-spinner" class="fixed inset-0 flex flex-col items-center justify-center z-50 overflow-hidden">
+      <!-- Animated Background with Glowing Dots -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+        <!-- Animated Dots Layer -->
+        <div class="absolute inset-0">
+          <!-- Large Yellow Dots -->
+          <div class="absolute top-20 left-20 w-4 h-4 bg-yellow-400 rounded-full animate-pulse opacity-80" style="animation-duration: 2s;"></div>
+          <div class="absolute top-32 right-32 w-6 h-6 bg-yellow-500 rounded-full animate-pulse opacity-60" style="animation-duration: 3s; animation-delay: 0.5s;"></div>
+          <div class="absolute bottom-40 left-16 w-5 h-5 bg-yellow-600 rounded-full animate-pulse opacity-70" style="animation-duration: 2.5s; animation-delay: 1s;"></div>
+          <div class="absolute bottom-20 right-20 w-3 h-3 bg-yellow-400 rounded-full animate-pulse opacity-90" style="animation-duration: 1.8s; animation-delay: 1.5s;"></div>
+          
+          <!-- Medium Yellow Dots -->
+          <div class="absolute top-1/3 left-1/4 w-3 h-3 bg-yellow-500 rounded-full animate-ping opacity-50" style="animation-duration: 4s;"></div>
+          <div class="absolute top-2/3 right-1/3 w-2 h-2 bg-yellow-400 rounded-full animate-ping opacity-60" style="animation-duration: 3.5s; animation-delay: 0.8s;"></div>
+          <div class="absolute top-1/2 left-1/3 w-4 h-4 bg-yellow-600 rounded-full animate-ping opacity-40" style="animation-duration: 2.8s; animation-delay: 1.2s;"></div>
+          
+          <!-- Small Floating Dots -->
+          <div class="absolute top-1/4 right-1/4 w-1 h-1 bg-yellow-400 rounded-full animate-bounce opacity-80" style="animation-duration: 2.2s;"></div>
+          <div class="absolute bottom-1/3 left-1/5 w-1 h-1 bg-yellow-500 rounded-full animate-bounce opacity-70" style="animation-duration: 2.7s; animation-delay: 0.3s;"></div>
+          <div class="absolute top-3/4 right-1/5 w-2 h-2 bg-yellow-600 rounded-full animate-bounce opacity-60" style="animation-duration: 3.2s; animation-delay: 0.7s;"></div>
+          
+          <!-- Moving Dots -->
+          <div class="absolute top-1/2 left-10 w-3 h-3 bg-yellow-400 rounded-full opacity-50 floating-dot-1"></div>
+          <div class="absolute bottom-1/2 right-10 w-2 h-2 bg-yellow-500 rounded-full opacity-60 floating-dot-2"></div>
+          <div class="absolute top-1/3 right-1/2 w-4 h-4 bg-yellow-600 rounded-full opacity-40 floating-dot-3"></div>
+          
+          <!-- Glowing Orbs -->
+          <div class="absolute top-1/4 left-1/2 w-8 h-8 bg-yellow-400 rounded-full opacity-30 blur-sm animate-pulse" style="animation-duration: 4s;"></div>
+          <div class="absolute bottom-1/4 right-1/2 w-6 h-6 bg-yellow-500 rounded-full opacity-20 blur-sm animate-pulse" style="animation-duration: 3.5s; animation-delay: 1s;"></div>
+          <div class="absolute top-2/3 left-1/5 w-10 h-10 bg-yellow-600 rounded-full opacity-15 blur-md animate-pulse" style="animation-duration: 5s; animation-delay: 0.5s;"></div>
+        </div>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="relative z-10 text-center">
+        <!-- Brand Name -->
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-yellow-400 mb-4 animate-pulse" style="text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);">
+          DevConnect
+        </h1>
+        
+        <!-- Tagline -->
+        <p class="text-xl sm:text-2xl text-white font-light opacity-90 animate-fade-in" style="animation-delay: 0.5s;">
+          My Personal Portfolio
+        </p>
+        
+        <!-- Subtle accent line -->
+        <div class="w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mt-6 animate-fade-in" style="animation-delay: 1s;"></div>
+      </div>
     </div>
     
     <!-- Main App Container -->
@@ -124,29 +329,111 @@
     <!-- Scripts -->
     <script type="module" src="./src/index.jsx"></script>
     
-    <!-- Hide loading spinner when app loads -->
+    <!-- Enhanced loading and theme management -->
     <script>
-      // Hide loading spinner once the app starts loading
+      // Theme management
+      function initializeTheme() {
+        document.documentElement.setAttribute('data-theme', 'black-yellow');
+        document.body.classList.add('black-yellow-theme');
+        
+        if (typeof Storage !== 'undefined') {
+          localStorage.setItem('portfolio-theme', 'black-yellow');
+        }
+      }
+      
+      // Initialize theme immediately
+      initializeTheme();
+      
+      // Simple loading screen management
       window.addEventListener('DOMContentLoaded', function() {
+        const minDisplayTime = 2500; // Show for 2.5 seconds minimum
+        const startTime = Date.now();
+        
+        function hideLoadingScreen() {
+          const elapsedTime = Date.now() - startTime;
+          const remainingTime = Math.max(0, minDisplayTime - elapsedTime);
+          
+          setTimeout(function() {
+            const loadingSpinner = document.getElementById('loading-spinner');
+            if (loadingSpinner) {
+              loadingSpinner.style.opacity = '0';
+              loadingSpinner.style.transform = 'scale(1.05)';
+              loadingSpinner.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+              
+              setTimeout(function() {
+                loadingSpinner.remove();
+              }, 1000);
+            }
+          }, remainingTime);
+        }
+        
+        hideLoadingScreen();
+      });
+      
+      // Cleanup when app fully loads
+      window.addEventListener('load', function() {
         setTimeout(function() {
           const loadingSpinner = document.getElementById('loading-spinner');
           if (loadingSpinner) {
-            loadingSpinner.style.opacity = '0';
-            loadingSpinner.style.transition = 'opacity 0.5s ease-out';
-            setTimeout(function() {
-              loadingSpinner.style.display = 'none';
-            }, 500);
+            loadingSpinner.remove();
           }
-        }, 1000);
+        }, 3000);
       });
       
-      // Performance optimization: Remove loading spinner if React app loads
-      window.addEventListener('load', function() {
+      // Error handling
+      window.addEventListener('error', function(e) {
+        console.error('Loading error:', e);
         const loadingSpinner = document.getElementById('loading-spinner');
         if (loadingSpinner) {
-          loadingSpinner.remove();
+          loadingSpinner.innerHTML = `
+            <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
+            <div class="relative z-10 text-center">
+              <div class="text-red-400 text-2xl mb-4">⚠️</div>
+              <h2 class="text-yellow-400 text-2xl font-bold mb-2">Loading Error</h2>
+              <p class="text-white mb-6">Failed to load DevConnect portfolio</p>
+              <button onclick="window.location.reload()" class="px-6 py-3 bg-yellow-400 text-black rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200">
+                Retry
+              </button>
+            </div>
+          `;
         }
       });
+      
+      // Add smooth scroll behavior for better navigation
+      document.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(e.target.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+      
+      // Performance monitoring
+      if ('performance' in window) {
+        window.addEventListener('load', function() {
+          const perfData = performance.getEntriesByType('navigation')[0];
+          console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+        });
+      }
+    </script>
+    
+    <!-- SEO and Social Media structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rohit Chintalapudi",
+      "jobTitle": "Frontend Web Developer",
+      "description": "Passionate Frontend Web Developer specializing in React, JavaScript, and modern web technologies",
+      "url": "https://your-portfolio-url.com",
+      "sameAs": [
+        "https://github.com/RohitChintalapudi",
+        "https://www.linkedin.com/in/rohit-chintalapudi-5454ba36a/"
+      ],
+      "knowsAbout": ["JavaScript", "React", "HTML", "CSS", "Frontend Development", "Web Development"]
+    }
     </script>
   </body>
 </html>

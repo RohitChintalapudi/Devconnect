@@ -45,32 +45,32 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="min-h-screen px-4 sm:px-6 -mt-10 lg:px-8 py-8"
+      className="min-h-screen px-4 sm:px-6 lg:px-8 py-8 bg-gradient-to-br from-black via-gray-900 to-yellow-900"
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-yellow-400">
             About Me & My Education
           </h1>
           <div className="max-w-4xl mx-auto">
-            <p className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed">
-              <b className="inline-block px-2 py-1 rounded text-white bg-gradient-to-br from-purple-500 via-blue-500 to-cyan-500">
+            <p className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed text-white">
+              <b className="inline-block px-2 py-1 rounded text-black bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600">
                 Hi, I'm Rohit
               </b>
               , a passionate and creative{" "}
-              <b className="inline-block px-2 py-1 rounded text-white bg-gradient-to-br from-purple-500 via-blue-500 to-cyan-500">
+              <b className="inline-block px-2 py-1 rounded text-black bg-gradient-to-br from-yellow-500 via-yellow-600 to-amber-500">
                 Frontend Web Developer
               </b>
               . I love transforming ideas into reality using code, and I'm
-              constantly <b>learning new technologies</b> to stay ahead in the
+              constantly <b className="text-yellow-400">learning new technologies</b> to stay ahead in the
               fast-paced world of web development.
             </p>
           </div>
         </div>
 
         {/* Timeline line */}
-        <div className="w-32 sm:w-48 lg:w-64 h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-400 mx-auto mb-16 rounded-full"></div>
+        <div className="w-32 sm:w-48 lg:w-64 h-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 mx-auto mb-16 rounded-full shadow-[0_0_10px_rgba(251,191,36,0.5)]"></div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6">
@@ -97,11 +97,11 @@ export default function About() {
                       toggleCard(item.id);
                     }
                   }}
-                  className="relative border-2 rounded-2xl border-black/20 w-full bg-white/20 h-64 p-8 cursor-pointer group overflow-hidden hover:shadow-black hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                  className="relative border-2 rounded-2xl border-yellow-400/30 w-full bg-black/40 backdrop-blur-sm h-64 p-8 cursor-pointer group overflow-hidden hover:shadow-yellow-400 hover:shadow-2xl hover:scale-105 transition-all duration-300"
                 >
                   {/* Front side */}
                   <div
-                    className={`absolute inset-0 flex items-center justify-center font-bold text-xl transition-opacity duration-500 ${
+                    className={`absolute inset-0 flex items-center justify-center font-bold text-xl text-white transition-opacity duration-500 ${
                       isActive
                         ? "opacity-0 pointer-events-none"
                         : "opacity-100 group-hover:opacity-0 pointer-events-auto"
@@ -109,25 +109,25 @@ export default function About() {
                   >
                     <div className="text-center">
                       <div className="text-4xl mb-3">{item.icon}</div>
-                      <div>{item.title}</div>
+                      <div className="text-yellow-400">{item.title}</div>
                     </div>
                   </div>
 
                   {/* Back side (details) */}
                   <div
-                    className={`absolute inset-0 transition-all duration-500 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500 text-black text-sm flex flex-col justify-center items-center text-center p-4 rounded-2xl ${
+                    className={`absolute inset-0 transition-all duration-500 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 text-black text-sm flex flex-col justify-center items-center text-center p-4 rounded-2xl ${
                       isActive
                         ? "opacity-100 pointer-events-auto"
                         : "opacity-0 group-hover:opacity-100 pointer-events-none"
                     }`}
                   >
-                    <h2 className="font-bold text-white text-lg mb-2">
+                    <h2 className="font-bold text-black text-lg mb-2">
                       {item.institution}
                     </h2>
-                    <p className="mb-3">
+                    <p className="mb-3 text-gray-800">
                       <strong>Years:</strong> {item.years}
                     </p>
-                    <ul className="list-disc font-bold text-left pl-4 space-y-1">
+                    <ul className="list-disc font-bold text-left pl-4 space-y-1 text-gray-900">
                       {item.achievements.map((achievement, i) => (
                         <li key={i}>{achievement}</li>
                       ))}

@@ -5,7 +5,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <main className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-black via-gray-900 pt-30 to-yellow-900">
       <div className="max-w-7xl mx-auto -mt-35 w-full">
         {/* Mobile and Tablet Layout (Stack Vertically) */}
         <div className="lg:hidden flex flex-col items-center text-center space-y-8">
@@ -19,7 +19,7 @@ export default function Home() {
             <img
               src="../assets/1749228827951.jpg"
               alt="Rohit Chintalapudi"
-              className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-white shadow-[0_0_30px_rgba(147,51,234,0.5)] object-cover"
+              className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full border-4 border-yellow-400 shadow-[0_0_30px_rgba(251,191,36,0.6)] object-cover"
             />
           </motion.div>
 
@@ -34,7 +34,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-400 leading-tight"
             >
               Frontend Developer
             </motion.h1>
@@ -45,12 +45,12 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
               className="text-base sm:text-lg md:text-xl text-white leading-relaxed"
             >
-              <span className="bg-purple-500 px-2 py-1 rounded font-bold">
+              <span className="bg-yellow-500 px-2 py-1 rounded font-bold text-black">
                 I am Rohit - web developer
               </span>{" "}
               with a passion for creating beautiful and responsive websites. I
               specialize in transforming ideas into{" "}
-              <span className="bg-cyan-400 px-2 py-1 rounded font-bold text-black">
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 px-2 py-1 rounded font-bold text-black">
                 interactive and user-friendly
               </span>{" "}
               digital experiences.
@@ -66,7 +66,7 @@ export default function Home() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto px-8 py-3 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-purple-500/50 bg-white/20 font-bold text-white hover:bg-gradient-to-br hover:from-blue-700 hover:via-violet-700 hover:to-fuchsia-700 transition-all duration-300 drop-shadow-[0_0_20px_rgba(147,51,234,0.6)] border border-white/20"
+                className="w-full sm:w-auto px-8 py-3 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-yellow-400/50 bg-black/60 font-bold text-yellow-400 hover:bg-gradient-to-br hover:from-yellow-400 hover:via-yellow-500 hover:to-yellow-600 hover:text-black transition-all duration-300 drop-shadow-[0_0_20px_rgba(251,191,36,0.6)] border border-yellow-400/30"
                 onClick={() => navigate("/contact")}
               >
                 Hire me!
@@ -77,7 +77,7 @@ export default function Home() {
                 download="Rohit_Chintalapudi_Resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full sm:w-auto px-8 py-3 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-purple-500/50 bg-white/20 font-bold text-white hover:bg-gradient-to-br hover:from-blue-700 hover:via-violet-700 hover:to-fuchsia-700 transition-all duration-300 drop-shadow-[0_0_20px_rgba(147,51,234,0.6)] border border-white/20 text-center inline-block"
+                className="w-full sm:w-auto px-8 py-3 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-yellow-400/50 bg-gray-800/60 font-bold text-yellow-400 hover:bg-gradient-to-br hover:from-yellow-400 hover:via-yellow-500 hover:to-yellow-600 hover:text-black transition-all duration-300 drop-shadow-[0_0_20px_rgba(251,191,36,0.6)] border border-yellow-400/30 text-center inline-block"
               >
                 Download Resume
               </motion.a>
@@ -98,7 +98,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-              className="text-4xl xl:text-5xl 2xl:text-6xl font-extrabold text-white leading-tight"
+              className="text-4xl xl:text-5xl 2xl:text-6xl font-extrabold text-yellow-400 leading-tight"
             >
               Frontend Developer
             </motion.h1>
@@ -109,12 +109,12 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
               className="text-lg xl:text-xl text-white leading-relaxed max-w-2xl"
             >
-              <span className="bg-purple-500 px-3 py-1 rounded-lg font-bold">
+              <span className="bg-yellow-500 px-3 py-1 rounded-lg font-bold text-black">
                 I am Rohit - web developer
               </span>{" "}
               with a passion for creating beautiful and responsive websites. I
               specialize in transforming ideas into{" "}
-              <span className="bg-cyan-400 px-3 py-1 rounded-lg font-bold text-black">
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 px-3 py-1 rounded-lg font-bold text-black">
                 interactive and user-friendly
               </span>{" "}
               digital experiences.
@@ -130,7 +130,7 @@ export default function Home() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-purple-500/50 bg-white/20 font-bold text-white hover:bg-gradient-to-br hover:from-blue-700 hover:via-violet-700 hover:to-fuchsia-700 transition-all duration-300 drop-shadow-[0_0_20px_rgba(147,51,234,0.6)] border border-white/20 text-lg"
+                className="px-8 py-4 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-yellow-400/50 bg-black/60 font-bold text-yellow-400 hover:bg-gradient-to-br hover:from-yellow-400 hover:via-yellow-500 hover:to-yellow-600 hover:text-black transition-all duration-300 drop-shadow-[0_0_20px_rgba(251,191,36,0.6)] border border-yellow-400/30 text-lg"
                 onClick={() => navigate("/contact")}
               >
                 Hire me!
@@ -141,7 +141,7 @@ export default function Home() {
                 download="Rohit_Chintalapudi_Resume.pdf"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-purple-500/50 bg-white/20 font-bold text-white hover:bg-gradient-to-br hover:from-blue-700 hover:via-violet-700 hover:to-fuchsia-700 transition-all duration-300 drop-shadow-[0_0_20px_rgba(147,51,234,0.6)] border border-white/20 text-center text-lg"
+                className="px-8 py-4 rounded-xl backdrop-blur-md shadow-2xl hover:shadow-yellow-400/50 bg-gray-800/60 font-bold text-yellow-400 hover:bg-gradient-to-br hover:from-yellow-400 hover:via-yellow-500 hover:to-yellow-600 hover:text-black transition-all duration-300 drop-shadow-[0_0_20px_rgba(251,191,36,0.6)] border border-yellow-400/30 text-center text-lg"
               >
                 Download Resume
               </motion.a>
@@ -158,7 +158,7 @@ export default function Home() {
             <motion.img
               src="../assets/1749228827951.jpg"
               alt="Rohit Chintalapudi"
-              className="w-72 h-72 xl:w-88 xl:h-88 2xl:w-[26rem] 2xl:h-[26rem] rounded-full border-4 border-white shadow-[0_0_40px_rgba(147,51,234,0.6)] object-cover"
+              className="w-72 h-72 xl:w-88 xl:h-88 2xl:w-[26rem] 2xl:h-[26rem] rounded-full border-4 border-yellow-400 shadow-[0_0_40px_rgba(251,191,36,0.7)] object-cover"
               initial={{ scale: 0.8, rotate: -5 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
@@ -170,12 +170,12 @@ export default function Home() {
         {/* Floating Elements for Visual Appeal */}
         <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
           <motion.div
-            className="absolute top-20 left-10 w-16 h-16 bg-purple-500/20 rounded-full blur-xl"
+            className="absolute top-20 left-10 w-16 h-16 bg-yellow-400/20 rounded-full blur-xl"
             animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div
-            className="absolute bottom-32 right-16 w-24 h-24 bg-cyan-400/20 rounded-full blur-xl"
+            className="absolute bottom-32 right-16 w-24 h-24 bg-yellow-500/30 rounded-full blur-xl"
             animate={{ y: [0, 20, 0], x: [0, -15, 0] }}
             transition={{
               duration: 8,
@@ -185,7 +185,7 @@ export default function Home() {
             }}
           />
           <motion.div
-            className="absolute top-1/2 right-1/4 w-12 h-12 bg-violet-600/20 rounded-full blur-xl"
+            className="absolute top-1/2 right-1/4 w-12 h-12 bg-yellow-600/20 rounded-full blur-xl"
             animate={{ y: [0, -30, 0], x: [0, 20, 0] }}
             transition={{
               duration: 7,
