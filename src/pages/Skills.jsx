@@ -6,7 +6,7 @@ export default function Skills() {
     "../assets/62b221ef038aad4d3ed7ca2e.png",
     "../assets/613b64fe30e8530004ba3a03.png",
     "../assets/62a74dd1223343fbc2207d00.png",
-    "../assets/62a754d4223343fbc2207d09.png",
+    "../assets/62a754d4223343fbc2207d0b.png",
     "../assets/62a6360f03a870b920cbfd41.png",
     "../assets/62a75261223343fbc2207d09.png",
     "../assets/629b7ab67c5cd817694c3230.png",
