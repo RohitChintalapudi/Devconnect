@@ -181,7 +181,11 @@ export default function Contact() {
               alt="Instagram"
             />
             <span className="text-yellow-400 cursor-pointer text-sm lg:text-base font-medium">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/rohit.roy2919/?utm_source=ig_web_button_share_sheet"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Instagram
               </a>
             </span>
