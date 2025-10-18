@@ -13,6 +13,8 @@ export default function Skills() {
     "../assets/a8cd2dd4499c1bba48709320bb50fb56.png",
     "../assets/fc6f52ff1691fd7c40061f4d251bac76.png",
     "../assets/icons8-tailwindcss-48.png",
+    "../assets/icons8-jwt-48.png",
+    "../assets/icons8-mongodb-48.png"
   ];
 
   return (
