@@ -172,7 +172,7 @@ export default function About() {
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-yellow-400"
+            className="text-2xl sm:text-4xl lg:text-4xl font-bold mt-6 text-yellow-400"
           >
             About Me & My Education
           </motion.h1>
@@ -180,7 +180,7 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="max-w-4xl mx-auto"
+            className="max-w-4xl mx-auto mt-6"
           >
             <p className="text-base sm:text-lg lg:text-xl font-medium leading-relaxed text-white">
               <b className="inline-block px-2 py-1 rounded text-black bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600">
@@ -188,12 +188,14 @@ export default function About() {
               </b>
               , a passionate and creative{" "}
               <b className="inline-block px-2 py-1 rounded text-black bg-gradient-to-br from-yellow-500 via-yellow-600 to-amber-500">
-                Frontend Web Developer
+                Full Stack Web Developer
               </b>
               . I love transforming ideas into reality using code, and I'm
-              constantly{" "}
-              <b className="text-yellow-400">learning new technologies</b> to
-              stay ahead in the fast-paced world of web development.
+              constantly{" "}learning new technologies to
+              stay ahead in the fast-paced
+              <b className="inline-block px-2 py-1 rounded text-black bg-gradient-to-br from-yellow-500 via-yellow-600 to-amber-500">
+               world of web development.
+              </b>
             </p>
           </motion.div>
         </div>

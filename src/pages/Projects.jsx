@@ -4,9 +4,9 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Cric-Play",
-      image: "../assets/img1.png",
-      link: "https://github.com/RohitChintalapudi/Cric-Play",
+      title: "Quiz",
+      image: "../assets/quiz.png",
+      link: "https://github.com/RohitChintalapudi/Quiz-app-for-revising-JavaScript",
       delay: 0.2,
     },
     {
@@ -18,9 +18,9 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Weather App",
-      image: "../assets/img2.png",
-      link: "https://github.com/RohitChintalapudi/weather-app/tree/master",
+      title: "NoteHub",
+      image: "../assets/notehub.png",
+      link: "https://github.com/RohitChintalapudi/UniNotes",
       delay: 0.6,
     },
   ];

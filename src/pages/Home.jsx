@@ -46,14 +46,14 @@ export default function Home() {
               className="text-base sm:text-lg md:text-xl text-white leading-relaxed"
             >
               <span className="bg-yellow-500 px-2 py-1 rounded font-bold text-black">
-                I am Rohit - web developer
+                I’m Rohit — a full-stack developer
               </span>{" "}
-              with a passion for creating beautiful and responsive websites. I
-              specialize in transforming ideas into{" "}
+              who builds fast, scalable, and visually polished web applications.
+              I turn ideas into complete end-to-end digital products,{" "}
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 px-2 py-1 rounded font-bold text-black">
-                interactive and user-friendly
+                from intuitive frontend interfaces
               </span>{" "}
-              digital experiences.
+              to robust backend systems.
             </motion.p>
 
             {/* Buttons - Mobile/Tablet */}
@@ -100,7 +100,7 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
               className="text-4xl xl:text-5xl 2xl:text-6xl font-extrabold text-yellow-400 leading-tight"
             >
-              Frontend Developer
+              Full Stack Developer
             </motion.h1>
 
             <motion.p
@@ -110,14 +110,14 @@ export default function Home() {
               className="text-lg xl:text-xl text-white leading-relaxed max-w-2xl"
             >
               <span className="bg-yellow-500 px-3 py-1 rounded-lg font-bold text-black">
-                I am Rohit - web developer
+                I’m Rohit - a full-stack developer
               </span>{" "}
-              with a passion for creating beautiful and responsive websites. I
-              specialize in transforming ideas into{" "}
+              who builds fast, scalable, and visually polished web applications.
+              I turn ideas into complete end-to-end digital products, from{" "}
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 px-3 py-1 rounded-lg font-bold text-black">
-                interactive and user-friendly
+                intuitive frontend interfaces
               </span>{" "}
-              digital experiences.
+              to robust backend systems.
             </motion.p>
 
             {/* Buttons - Desktop */}

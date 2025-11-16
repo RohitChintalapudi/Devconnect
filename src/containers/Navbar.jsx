@@ -35,7 +35,7 @@ export default function Navbar() {
             >
               <button
                 onClick={() => handleNavClick("/")}
-                className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
+                className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent hover:scale-105 cursor-pointer transition-transform duration-300"
               >
                 DevConnect
               </button>
